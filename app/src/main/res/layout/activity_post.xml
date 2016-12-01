@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.simpleblog.PostActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="25dp">
+
+    <ImageButton
+        android:src="@drawable/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/imageButton_select"
+        android:background="#00ffffff"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_title"
+        android:layout_below="@+id/imageButton_select"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Post Title ..."
+        android:background="@drawable/input_outline"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_description"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/editText_title"
+        android:layout_alignRight="@+id/editText_title"
+        android:layout_alignEnd="@+id/editText_title"
+        android:layout_alignLeft="@+id/editText_title"
+        android:layout_alignStart="@+id/editText_title"
+        android:hint="Post Description ..."
+        android:background="@drawable/input_outline"
+        android:padding="15dp" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Post"
+        android:id="@+id/button_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:background="#00ffffff"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
